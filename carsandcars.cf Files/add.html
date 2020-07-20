@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add cars</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        body {
+            font: 14px sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-header">
+        <h1>Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>CARS & CARS.</h1>
+    </div>
+    <h1>Enter details of new car</h1>
+
+    <form action="add.php" method="POST">
+        ID:
+        <br><input type="text" name="id"><br> Make:
+        <br><input type="text" name="make"><br> Model:
+        <br><input type="text" name="model"><br> Series:
+        <br><input type="text" name="series"><br> Year of Production:
+        <br><input type="text" name="year_of_prod"><br> Horsepower:
+        <br><input type="text" name="horsepower"><br> Fuelsystem:
+        <br><input type="text" name="fuelsystem"><br> Fuel:
+        <br><input type="text" name="fuel"><br> Type:
+        <br><input type="text" name="type"><br> No of Gears:
+        <br><input type="text" name="no_of_gears"><br> Wheel Drive:
+        <br><input type="text" name="wheel_drive"><br> Top speed:
+        <br><input type="text" name="topspeed"><br> Acceleration:
+        <br><input type="text" name="acceleration"><br> New price:
+        <br><input type="text" name="new"><br> Used price:
+        <br><input type="text" name="used"><br> Pic Link:
+        <br><input type="text" name="pic"><br> Video Link:
+        <br><input type="text" name="video"><br>Web Link:
+        <br><input type="text" name="link"><br><br>
+
+        <input type="reset" value="RESET">
+        <input type="submit" value="Submit"><br><br>
+    </form>
+
+    <p>
+        <a href="welcome.php" class="btn btn-info">Back to HOME</a>
+        <a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+    </p>
+</body>
+
+</html>
